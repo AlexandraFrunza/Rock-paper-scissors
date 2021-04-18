@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="main/main.js" defer></script>
+</head>
+<body>
+    <article class="game">
+        <div class="score">
+            <div class="user-score">
+                <h2>User</h2>
+                <p id="userScoreResult">0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p id="computerScoreResult">0</p>
+            </div>
+        </div>
+        <section class="match">
+            <h2 class="question">Which one do you choose?</h2>
+            <div class="buttons">
+                <button class="but" id = "rock">Rock</button>
+                <button class="but" id="paper">Paper</button>
+                <button class = "but" id="scissors">Scissors</button> 
+            </div>
+        </section>
+
+        <div data-result-div class="result-div">
+            <p class="result">You win</p>
+            <p>User choice: <span data-user-choice></span> || Computer choice: <span data-computer-choice></span></p>
+        </div>
+    </article>
+   
+</body>
+</html>
